@@ -4,7 +4,6 @@ import { StatusBar } from 'ionic-native';
 import './rxjs-operators';
 
 import { Page1 } from '../pages/page1/page1';
-import { Page2 } from '../pages/page2/page2';
 
 @Component({
   templateUrl: 'app.html'
@@ -22,7 +21,6 @@ export class MyApp {
     // used for an example of ngFor and navigation
     this.pages = [
       { title: 'Page One', component: Page1 },
-      { title: 'Page Two', component: Page2 }
     ];
 
   }
