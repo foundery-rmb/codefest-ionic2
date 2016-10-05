@@ -5,8 +5,9 @@ import { IonicApp, IonicModule } from 'ionic-angular';
 import { AliceApp } from './app.component';
 import { WelcomePage } from '../pages/welcome/welcome';
 import { PingComponent } from './ping/ping.component';
-import { PingService } from './ping/ping.service'
+import { PingService } from './ping/ping.service';
 import { AliceInputComponent } from './alice-input/alice-input.component';
+import { AliceQueryService } from './services/alice.query.service';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,6 @@ import { AliceInputComponent } from './alice-input/alice-input.component';
     AliceApp,
     WelcomePage,
   ],
-  providers: [PingService]
+  providers: [PingService, AliceQueryService]
 })
 export class AppModule {}

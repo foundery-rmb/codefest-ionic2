@@ -1,8 +1,9 @@
 import { Injectable } from '@angular/core';
-import { Http, Headers, RequestOptions, Response } from '@angular/http';
-
-import { Ping } from './ping';
+import { Http, Response } from '@angular/http';
 import { Observable } from 'rxjs/Observable';
+
+import { AppConstants } from '../config/constants';
+import { Ping } from './ping';
 
 @Injectable()
 export class PingService {
@@ -10,7 +11,7 @@ export class PingService {
     constructor (private http: Http) {}
 
     ping (): Observable<Ping> {
-        return this.http.get('http://52.164.230.238:3000/ping')
+        return this.http.get(AppConstants.SERVER + '/ping')
                         .map(this.extractData)
                         .catch(this.handleError);
     }
