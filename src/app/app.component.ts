@@ -8,7 +8,7 @@ import { Page1 } from '../pages/page1/page1';
 @Component({
   templateUrl: 'app.html'
 })
-export class MyApp {
+export class AliceApp {
   @ViewChild(Nav) nav: Nav;
 
   rootPage: any = Page1;

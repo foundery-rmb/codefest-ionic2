@@ -2,24 +2,24 @@ import { NgModule } from '@angular/core';
 import { HttpModule } from '@angular/http';
 import { IonicApp, IonicModule } from 'ionic-angular';
 
-import { MyApp } from './app.component';
+import { AliceApp } from './app.component';
 import { Page1 } from '../pages/page1/page1';
 import { PingComponent } from './ping/ping.component';
 import { PingService } from './ping/ping.service'
 
 @NgModule({
   declarations: [
-    MyApp,
+    AliceApp,
     PingComponent,
     Page1,
   ],
   imports: [
-    IonicModule.forRoot(MyApp),
+    IonicModule.forRoot(AliceApp),
     HttpModule,
   ],
   bootstrap: [IonicApp],
   entryComponents: [
-    MyApp,
+    AliceApp,
     Page1,
   ],
   providers: [PingService]
