@@ -3,7 +3,7 @@ import { HttpModule } from '@angular/http';
 import { IonicApp, IonicModule } from 'ionic-angular';
 
 import { AliceApp } from './app.component';
-import { Page1 } from '../pages/page1/page1';
+import { WelcomePage } from '../pages/welcome/welcome';
 import { PingComponent } from './ping/ping.component';
 import { PingService } from './ping/ping.service'
 
@@ -11,7 +11,7 @@ import { PingService } from './ping/ping.service'
   declarations: [
     AliceApp,
     PingComponent,
-    Page1,
+    WelcomePage,
   ],
   imports: [
     IonicModule.forRoot(AliceApp),
@@ -20,7 +20,7 @@ import { PingService } from './ping/ping.service'
   bootstrap: [IonicApp],
   entryComponents: [
     AliceApp,
-    Page1,
+    WelcomePage,
   ],
   providers: [PingService]
 })

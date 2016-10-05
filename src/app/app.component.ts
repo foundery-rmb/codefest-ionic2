@@ -3,7 +3,7 @@ import { Nav, Platform } from 'ionic-angular';
 import { StatusBar } from 'ionic-native';
 import './rxjs-operators';
 
-import { Page1 } from '../pages/page1/page1';
+import { WelcomePage } from '../pages/welcome/welcome';
 
 @Component({
   templateUrl: 'app.html'
@@ -11,7 +11,7 @@ import { Page1 } from '../pages/page1/page1';
 export class AliceApp {
   @ViewChild(Nav) nav: Nav;
 
-  rootPage: any = Page1;
+  rootPage: any = WelcomePage;
 
   pages: Array<{title: string, component: any}>;
 
@@ -20,7 +20,7 @@ export class AliceApp {
 
     // used for an example of ngFor and navigation
     this.pages = [
-      { title: 'Page One', component: Page1 },
+      { title: 'Welcome Page', component: WelcomePage },
     ];
 
   }
