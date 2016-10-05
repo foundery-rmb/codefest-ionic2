@@ -10,9 +10,7 @@ export class PingService {
     constructor (private http: Http) {}
 
     ping (): Observable<Ping> {
-        let headers = new Headers({ 'Access-Control-Allow-Origin': 'http://52.164.230.238:3000' });
-        let options = new RequestOptions({ headers: headers });
-        return this.http.get('http://52.164.230.238:3000/ping', options)
+        return this.http.get('http://52.164.230.238:3000/ping')
                         .map(this.extractData)
                         .catch(this.handleError);
     }
