@@ -8,6 +8,7 @@ import { ClientProfile } from '../pages/client-profile/client-profile';
 import { PingComponent } from './ping/ping.component';
 import { PingService } from './ping/ping.service';
 import { AliceInputComponent } from './alice-input/alice-input.component';
+import { ClientDetailsComponent } from '../components/client-details/client-details';
 import { AliceQueryService } from './services/alice.query.service';
 
 @NgModule({
@@ -15,6 +16,7 @@ import { AliceQueryService } from './services/alice.query.service';
     AliceApp,
     PingComponent,
     AliceInputComponent,
+    ClientDetailsComponent,
     WelcomePage,
     ClientProfile
   ],

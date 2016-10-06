@@ -4,6 +4,7 @@ import { Observable } from 'rxjs/Observable';
 
 import { AliceResponse } from '../../app/services/alice.response/response';
 import { Client } from '../../app/services/alice.response/client';
+import { ClientDetailsComponent } from '../../components/client-details/client-details';
 
 @Component({
   selector: 'page-client-profile',
@@ -19,9 +20,4 @@ export class ClientProfile {
       aliceResponse => this.clients = aliceResponse.clients,
       error => console.log(error))
   }
-
-  ionViewDidLoad() {
-    console.log('Hello ClientProfile Page');
-  }
-
 }
