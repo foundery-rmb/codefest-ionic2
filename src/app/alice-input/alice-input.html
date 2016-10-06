@@ -4,4 +4,16 @@
     <ion-input type="text" [(ngModel)]="userQuery"></ion-input> 
     <button ion-button (click)="onsubmit();" full>Submit</button>
 
+    <ion-grid *ngIf="aliceResponses.length > 0">
+        <ion-row>
+            <ion-col top>Client</ion-col>
+            <ion-col top>Risk profile</ion-col>
+            <ion-col top>Fund count</ion-col>
+        </ion-row>
+        <ion-row *ngFor="let response of aliceResponses">
+            <ion-col>{{response.clientName}}</ion-col>
+            <ion-col>{{response.riskProfile}}</ion-col>
+            <ion-col>{{response.fundCount}}</ion-col>
+        </ion-row>
+    </ion-grid>
 </div>
