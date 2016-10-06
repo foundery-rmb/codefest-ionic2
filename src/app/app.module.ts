@@ -4,6 +4,7 @@ import { IonicApp, IonicModule } from 'ionic-angular';
 
 import { AliceApp } from './app.component';
 import { WelcomePage } from '../pages/welcome/welcome';
+import { ClientProfile } from '../pages/client-profile/client-profile';
 import { PingComponent } from './ping/ping.component';
 import { PingService } from './ping/ping.service';
 import { AliceInputComponent } from './alice-input/alice-input.component';
@@ -15,6 +16,7 @@ import { AliceQueryService } from './services/alice.query.service';
     PingComponent,
     AliceInputComponent,
     WelcomePage,
+    ClientProfile
   ],
   imports: [
     IonicModule.forRoot(AliceApp),
@@ -24,6 +26,7 @@ import { AliceQueryService } from './services/alice.query.service';
   entryComponents: [
     AliceApp,
     WelcomePage,
+    ClientProfile
   ],
   providers: [PingService, AliceQueryService]
 })
