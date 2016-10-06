@@ -13,16 +13,8 @@ export class AliceApp {
 
   rootPage: any = WelcomePage;
 
-  pages: Array<{title: string, component: any}>;
-
   constructor(public platform: Platform) {
     this.initializeApp();
-
-    // used for an example of ngFor and navigation
-    this.pages = [
-      { title: 'Welcome Page', component: WelcomePage },
-    ];
-
   }
 
   initializeApp() {
