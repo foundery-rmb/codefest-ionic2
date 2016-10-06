@@ -1,3 +1,22 @@
-<ion-list>
-  <ion-item *ngFor="let client of clients">{{client.Client}}</ion-item>
+Corporate Profile
+
+<ion-list no-lines *ngFor="let client of clients">
+    <ion-item class="heading">
+      {{client.Client}}
+    </ion-item>
+    <ion-item>
+      <h3>{{client.Legal_persona_client}}</h3>
+    </ion-item>
+    <ion-item>
+      <h3>{{client.Category}}</h3>
+    </ion-item>
+    <ion-item>
+      <h3>{{client.Risk_profile_client}}</h3>
+    </ion-item>
+    <ion-item>
+      <p><b>Reg #:</b> {{client.Reg_number}}</p>
+    </ion-item>
+    <ion-item>
+      <p><b>FSP #: </b>{{client.FSP_number}}</p>
+    </ion-item>
 </ion-list>
