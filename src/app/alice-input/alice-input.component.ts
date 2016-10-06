@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { AliceQueryService } from '../services/alice.query.service';
-import { AliceResponse } from '../services/alice.response';
+import { AliceResponse } from '../services/alice.response/response';
 
 @Component({
     selector: 'alice-input',
@@ -9,14 +9,14 @@ import { AliceResponse } from '../services/alice.response';
 export class AliceInputComponent {
 
     userQuery = '';
-    aliceResponses: AliceResponse[] = [];
+    aliceResponse: AliceResponse;
 
     constructor(private aliceQueryService: AliceQueryService) { }
 
     onsubmit() {
         this.aliceQueryService.query(this.userQuery)
             .subscribe(
-                aliceResponses => this.aliceResponses = aliceResponses,
+                aliceResponse => this.aliceResponse = aliceResponse,
                 error => console.log(error));
     }
 }

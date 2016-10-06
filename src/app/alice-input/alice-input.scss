@@ -1,4 +1,17 @@
-ion-input, ion-select, ion-textarea {
+@import "../../theme/variables";
+
+alice-input {
+    
+    ion-input, ion-select, ion-textarea {
         background-color: #f2f2f2;
         padding: 5px 10px;
     }
+
+    ion-grid {
+        background-color:  map-get($colors, light)
+    }
+    
+    ion-row [top] {
+        font-weight: bold
+    }
+}

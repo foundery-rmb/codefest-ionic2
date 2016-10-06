@@ -3,25 +3,19 @@ import { Http, Response } from '@angular/http';
 import { Observable } from 'rxjs/Observable';
 
 import { AppConstants } from '../config/constants';
-import { AliceResponse } from './alice.response';
+import { AliceResponse } from './alice.response/response';
 
 @Injectable()
 export class AliceQueryService {
 
     constructor(private http: Http) { }
 
-    query(userQuery: string): Observable<AliceResponse[]> {
+    query(userQuery: string): Observable<AliceResponse> {
         return this.http.get(AppConstants.SERVER + '/query/' + userQuery)
             .map(this.toAliceResponses);
     }
 
-    toAliceResponses(response: Response): AliceResponse[] {
-        let clients: AliceResponse[] = [];
-
-        let body: any[] = response.json();
-        for (let entry of body) {
-            clients.push(new AliceResponse(entry.Client, entry.Risk_profile_client, entry.Fund_count))
-        }
-        return clients;
+    toAliceResponses(response: Response): AliceResponse {
+        return response.json();
     }
 }
