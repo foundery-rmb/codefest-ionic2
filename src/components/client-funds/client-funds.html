@@ -1,7 +1,5 @@
-<ion-content>
-  <ion-grid>
-    <ion-row *ngFor="let countedFund of countedFunds">
-      <ion-col>{{countedFund.key}}</ion-col><ion-col>{{countedFund.value}}</ion-col>
-    </ion-row>
-  </ion-grid>
-</ion-content>
+<ion-grid>
+  <ion-row wrap *ngFor="let countedFund of countedFunds">
+    <ion-col width-90>{{countedFund.key}}</ion-col><ion-col>{{countedFund.value}}</ion-col>
+  </ion-row>
+</ion-grid>

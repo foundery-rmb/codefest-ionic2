@@ -1,6 +1,7 @@
 Corporate Profile
 
-<ion-list no-lines *ngFor="let client of clients">
+<ion-content *ngFor="let client of clients">
+  <ion-list no-lines>
     <ion-item class="heading">
       {{client.Client}}
     </ion-item>
@@ -19,4 +20,7 @@ Corporate Profile
     <ion-item>
       <p><b>FSP #: </b>{{client.FSP_number}}</p>
     </ion-item>
-</ion-list>
+  </ion-list>
+
+  <client-funds [funds]="client.funds"></client-funds>
+</ion-content>
