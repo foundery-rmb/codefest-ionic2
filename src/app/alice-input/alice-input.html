@@ -4,16 +4,4 @@
     <ion-input type="text" [(ngModel)]="userQuery"></ion-input> 
     <button ion-button (click)="onsubmit();" full>Submit</button>
 
-    <ion-grid *ngIf="aliceResponse">
-        <ion-row>
-            <ion-col top>Client</ion-col>
-            <ion-col top>Risk profile</ion-col>
-            <ion-col top>Registration Number</ion-col>
-        </ion-row>
-        <ion-row *ngFor="let client of aliceResponse.clients">
-            <ion-col>{{client.Client}}</ion-col>
-            <ion-col>{{client.Risk_profile_client}}</ion-col>
-            <ion-col>{{client.Reg_number}}</ion-col>
-        </ion-row>
-    </ion-grid>
 </div>
