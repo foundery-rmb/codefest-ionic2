@@ -1,0 +1,9 @@
+page-funds-page {
+    ion-header {
+        h1 {
+            color: map-get($colors, primary);
+            padding-left: 10px;
+            font-size: 1.5em;
+        }
+    }
+}
