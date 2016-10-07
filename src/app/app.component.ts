@@ -3,7 +3,7 @@ import { Nav, Platform } from 'ionic-angular';
 import { StatusBar } from 'ionic-native';
 import './rxjs-operators';
 
-import { WelcomePage } from '../pages/welcome/welcome';
+import { LoginPage } from '../pages/login-page/login-page';
 
 @Component({
   templateUrl: 'app.html'
@@ -11,7 +11,7 @@ import { WelcomePage } from '../pages/welcome/welcome';
 export class AliceApp {
   @ViewChild(Nav) nav: Nav;
 
-  rootPage: any = WelcomePage;
+  rootPage: any = LoginPage;
 
   constructor(public platform: Platform) {
     this.initializeApp();

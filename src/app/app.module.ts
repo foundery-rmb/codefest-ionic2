@@ -4,6 +4,7 @@ import { IonicApp, IonicModule } from 'ionic-angular';
 
 import { AliceApp } from './app.component';
 import { WelcomePage } from '../pages/welcome/welcome';
+import { LoginPage } from '../pages/login-page/login-page';
 import { ClientProfile } from '../pages/client-profile/client-profile';
 import { AliceInputComponent } from './alice-input/alice-input.component';
 import { ClientDetailsComponent } from '../components/client-details/client-details';
@@ -16,6 +17,7 @@ import { AliceQueryService } from './services/alice.query.service';
     AliceInputComponent,
     ClientDetailsComponent,
     ClientFunds,
+    LoginPage,
     WelcomePage,
     ClientProfile
   ],
@@ -26,6 +28,7 @@ import { AliceQueryService } from './services/alice.query.service';
   bootstrap: [IonicApp],
   entryComponents: [
     AliceApp,
+    LoginPage,
     WelcomePage,
     ClientProfile
   ],
