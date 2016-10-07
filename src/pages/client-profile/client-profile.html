@@ -1,3 +1,10 @@
 <ion-content padding>
     <client-details [clients]="clients"></client-details>
 </ion-content>
+
+<ion-footer>
+    <button ion-button icon-left block light (click)="navigateForward()">
+        <ion-icon name="mic"></ion-icon>
+        Refine your search
+        </button>
+</ion-footer>

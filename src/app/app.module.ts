@@ -6,6 +6,8 @@ import { AliceApp } from './app.component';
 import { WelcomePage } from '../pages/welcome/welcome';
 import { LoginPage } from '../pages/login-page/login-page';
 import { ClientProfile } from '../pages/client-profile/client-profile';
+import { FundsPage } from '../pages/funds-page/funds-page';
+import { LegalPersonaFundPage } from '../pages/legal-persona-fund-page/legal-persona-fund-page';
 import { AliceInputComponent } from './alice-input/alice-input.component';
 import { ClientDetailsComponent } from '../components/client-details/client-details';
 import { ClientFunds } from '../components/client-funds/client-funds';
@@ -19,7 +21,9 @@ import { AliceQueryService } from './services/alice.query.service';
     ClientFunds,
     LoginPage,
     WelcomePage,
-    ClientProfile
+    ClientProfile,
+    FundsPage,
+    LegalPersonaFundPage
   ],
   imports: [
     IonicModule.forRoot(AliceApp),
@@ -30,7 +34,9 @@ import { AliceQueryService } from './services/alice.query.service';
     AliceApp,
     LoginPage,
     WelcomePage,
-    ClientProfile
+    ClientProfile,
+    FundsPage,
+    LegalPersonaFundPage
   ],
   providers: [AliceQueryService]
 })
